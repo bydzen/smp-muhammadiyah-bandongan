@@ -409,6 +409,9 @@ footer {
   flex-direction: column;
   gap: 16px;
 }
+.thumnail-img {
+  background-position: center;
+}
 .thumnail-text {
   display: flex;
   justify-content: center;
@@ -448,6 +451,32 @@ footer {
 .banner-text .button:hover {
   background: #0772b0;
 }
+.sub-banner {
+  border: 1px solid;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+.sub-banner p {
+  text-align: center;
+}
+.sub-banner h3 {
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+.sub-banner h3::after {
+  content: '';
+  display: block;
+  width: 60px;
+  border: 3px solid red;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 30px);
+}
 .header-menu li:last-child a {
   background: #2e8bc0;
   border-radius: 4px;
@@ -472,4 +501,15 @@ footer {
 #ekstra .container {
   position: relative;
   z-index: 1;
+}
+.box-gmaps {
+  width: 75%;
+}
+.contact-maps {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 100px;
+}
+.contact-section {
+  padding-bottom: 0;
 }
