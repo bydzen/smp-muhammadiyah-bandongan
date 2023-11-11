@@ -6,6 +6,10 @@
                 <h3>Selamat Datang di <?=$d->nama?></h3>
                 <p>Sekolah Menengah Pertama mempunyai Mutu dalam Belajar dan Beragama dengan baik.</p>
                 </div>
+                <div class="container button-group">
+                    <a href="tentang-sekolah.php" class="button">Tentang</a>
+                    <a href="kontak.php" class="button">Kontak</a>
+                </div>
             </div>
         </div>
 
@@ -21,8 +25,9 @@
 
         <!--bagian ekstra-->
         <div class="section" id="ekstra">
+            <div class="extra-overlay"></div>
             <div class="container text-center">
-                <h3>ekstra</h3>
+                <h3>Ekstrakulikuler</h3>
                 <?php
                     $ekstra = mysqli_query($conn," SELECT * FROM ekstra ORDER BY id DESC LIMIT 8");
                     if(mysqli_num_rows($ekstra)>0){
@@ -61,7 +66,6 @@
                     <a href="detail-informasi.php?id=<?=$p['id']?>" class="thumnail-link">
                     <div class="thumnail-box">
                         <div class="thumnail-img" style="background-image: url('uploads/informasi/<?=$p['gambar']?>');">
-
                         </div>
                         <div class="thumnail-text">
                         <?=substr ($p['judul'], 0, 50)?>
