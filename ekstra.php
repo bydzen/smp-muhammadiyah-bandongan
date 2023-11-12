@@ -1,7 +1,16 @@
 <?php include 'header.php'; ?>
+<!-- bagian sub-banner-->
+<div class="sub-banner" style="background-image: url('uploads/identitas/<?= $d->foto_sekolah?>');">
+    <div class="banner-text">
+        <div class="container">
+        <h3>Ekstrakulikuler</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, eum!</p>
+        </div>
+    </div>
+</div>
 <div class="section">
     <div class="container">
-        <h3 class="text-center">Ekstrakulikuler</h3>
+        <h3 class="text-center">Galeri Kegiatan</h3>
         <?php
                     $ekstra = mysqli_query($conn," SELECT * FROM ekstra ORDER BY id DESC");
                     if(mysqli_num_rows($ekstra)>0){
