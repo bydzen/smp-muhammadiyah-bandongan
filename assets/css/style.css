@@ -513,3 +513,42 @@ footer {
 .contact-section {
   padding-bottom: 0;
 }
+.section-visi-misi {
+  display: flex;
+  justify-content: center;
+  margin-top: -5%;
+  z-index: 99999 !important;
+  position: relative;
+}
+.section-visi-misi .visi {
+  border-right: 1px solid #ffffff55;
+}
+.section-visi-misi-wrapper {
+  background-color: #0772b0 !important;
+  color: #ffffff;
+  padding: 32px;
+  display: flex;
+  max-width: 75%;
+  gap: 24px;
+}
+.section-visi-misi .visi, .section-visi-misi .misi {
+  flex-basis: 100%;
+}
+.section-visi-misi-wrapper ul {
+  list-style: decimal;
+  padding-left: 24px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.icon span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.icon svg {
+  height: 48px;
+}
